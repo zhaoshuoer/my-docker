@@ -12,7 +12,7 @@ ENV ANDROID_BUILD_TOOLS 26.0.2
 ENV ANDROID_HOME /opt/android-sdk-linux
 ENV PATH ${PATH}:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools:/opt/gradle-4.1/bin
 #用于干掉每次编译时总是从Google下载gradle编译工具
-ENV CORDOVA_ANDROID_GRADLE_DISTRIBUTION_URL='http://www.zscode.com/gradle-4.1-all.zip'
+ENV CORDOVA_ANDROID_GRADLE_DISTRIBUTION_URL='https://raw.githubusercontent.com/zhaoshuoer/my-docker/master/node/app/public/gradle-4.1-all.zip'
 #安装node、cordova环境
 RUN curl -sL https://deb.nodesource.com/setup_10.x | bash && \
     apt-get install -y nodejs && \
